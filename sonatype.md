@@ -36,6 +36,21 @@
 
 9. 导出证书，以备上传时签名使用
 
+10. 查看GPG key 如下 key为 93BFCA02
+
+    ```shell
+    gpg --list-signatures --keyid-format 0xshort
+    ------------------------------------------------
+    pub   rsa3072/0x93BFCA02 2021-06-04 [SC] [expires: 2023-06-04]
+          3B4D9F0BAC884AB7DA3EC94E83237F4493BFCA02
+    uid           [ultimate] amrjlg <2899297045@qq.com>
+    sig 3        0x93BFCA02 2021-06-04  amrjlg <2899297045@qq.com>
+    sub   rsa3072/0xFB249135 2021-06-04 [E] [expires: 2023-06-04]
+    sig          0x93BFCA02 2021-06-04  amrjlg <2899297045@qq.com>
+    ```
+
+    
+
 ## Gradle 配置
 配置编码 、javadoc
 ```groovy
@@ -159,6 +174,8 @@ gradle.properties
 
 ```properties
 # 制定使用哪个证书
+# 导出文件名称默认为 amrjlg_0x93BFCA02_SECRET.gpg
+# 文件key 就是 93BFCA02
 signing.keyId=93BFCA02
 # 证书密码
 signing.password=0231625530
