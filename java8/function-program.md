@@ -101,9 +101,13 @@
 
 - `ofNullable`
 - `empty`
+
+
+
+- `persent`
+- `ifPersent`
 - `map`
 - `flatMap`
-- `ifPersent`
 - `orElse`
 - `orElseThrow`
 
