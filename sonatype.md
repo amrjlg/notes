@@ -14,7 +14,7 @@
 
 5. 等一会儿后，会让你进行***Group Id***验证。例如使用github，会让你创建一个仓库确定账号所有权
 
-   ​       ![验证](./resources/verify.png)
+   ​       ![验证](resources/git/verify.png)
 
 **验证完成后，Sonatype 的准备工作告一段落**
 

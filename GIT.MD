@@ -13,7 +13,7 @@
 
 1. `git reflog` 查看最近的操作
 
-![git reflog](./resources/reflog.png)
+![git reflog](resources/git/reflog.png)
 
 2. 找到误操作的哪一个记录，执行 `git reset --hard`
 
@@ -33,7 +33,7 @@
 
   `git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -15 | awk '{print$1}')"`
 
-  ![示例图](./resources/rev-list.png)
+  ![示例图](resources/git/rev-list.png)
 
   - 删除文件及相关记录
 
